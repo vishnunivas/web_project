@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerZone</title>
+    <link rel="stylesheet" href="practice_web_1.css">
+</head>
+<body>
+    <div id="landing-wrapper">
+    <header>
+        <div class="logo"><a href="#">GamerZone</a></div>
+        
+        <div class="heading">
+            <ul>
+                <li><a href="#" class="under">HOME</a></li>
+                <li><a href="practice_web_contact.html" class="under">CONTACT US</a></li>
+                <li><a href="#" class="under">OUR LOCATION</a></li>
+                <li><a href="#" class="under">SERVICES</a></li>
+                <li><a href="practice_web_about.html" class="under">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="heading1">
+            <ion-icon name="menu" class="ham"></ion-icon>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://img.freepik.com/premium-vector/futuristic-light-red-blue-gaming-header-social-media-banner-template_136469-1320.jpg?w=1380" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-002-REVEAL-007.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://images.indianexpress.com/2023/02/Valorant-Riot-Games.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://wstatic-prod.pubg.com/web/live/static/og/img-og-pubg.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/4d1b7748-96db-11e6-b813-00163ec9f5fa/2951139223/need-for-speed-screenshot.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2021/01/gta-online-fastest-cars-and-bikes.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+        <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) 
+                  {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+        </script>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="section2">
+            <div class="container">
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://wallpapercave.com/wp/wp4268812.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">COD MW2</div>
+                    <div class="price"><a href="https://oceanofgames.com/call-of-duty-modern-warfare-2-download-free/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Multiplayer option available
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img3">
+                        <img
+                            src="https://c4.wallpaperflare.com/wallpaper/695/657/110/need-for-speed-need-for-speed-most-wanted-bmw-m3-gtr-car-hd-wallpaper-preview.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">NFS Most Wanted</div>
+                    <div class="price"><a href="https://oceanofgames.com/need-for-speed-most-wanted-download-free/">DOWNLOAD</a></div>
+                    <div class="info">Single Player OFFLINE</div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://wallpapercave.com/wp/wp8332563.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">Assassin's Creed</div>
+                    <div class="price"><a href="https://oceantogames.com/assassins-creed-1-free-download/">DOWNLOAD</a></div>
+                    <div class="info">Multiplayer option available</div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://i.ytimg.com/vi/iqaipBpnVRE/maxresdefault.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">Red Redemption 2</div>
+                    <div class="price"><a href="https://oceantogames.com/red-dead-redemption-2-pc-download-free/">DOWNLOAD</a></div>
+                    <div class="info">Multiplayer option available</div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://media.altchar.com/prod/images/940_530/gm-0170d63e-4d23-4529-8dce-a7d805fe49f6-nfs-heat.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">NFS Heat</div>
+                    <div class="price"><a href="https://oceantogames.com/need-for-speed-heat-free-download/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Multiplayer option available
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://miro.medium.com/v2/resize:fit:1400/1*reAt1iiqtwlqvL-5HP0NHw.jpeg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">Euro Truck Simulator</div>
+                    <div class="price"><a href="https://oceanofgames.com/euro-truck-simulator-2-free-download-2678071/">DOWNLOAD</a></div>
+                    <div class="info">Single Player</div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/en/1/16/The_Witcher%2C_Monster_Slayer.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">The Witcher : Monster Slayer</div>
+                    <div class="price"><a href="https://www.gameloop.com/game/role-playing/the-witcher-monster-slayer">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player OFFLINE
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://m.media-amazon.com/images/M/MV5BOGQxMGM4NzItYjkwMC00MGQ3LThhNWEtYjFkZTQ2ZDg0MjI2XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">God of War</div>
+                    <div class="price"><a href="https://oceantogames.com/god-of-war-free-download-ofgv-2480590/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://i.ytimg.com/vi/MBa6wx3q1Rs/maxresdefault.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">Hill Climb Racing</div>
+                    <div class="price"><a href="https://www.filehorse.com/download-hill-climb-racing/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://th.bing.com/th/id/R.c2a230a06c5dced3f631bb0b9a2568d0?rik=cirnT9IC3nNJKQ&riu=http%3a%2f%2fimages.pushsquare.com%2fnews%2f2016%2f06%2fe3_2016_jeepers_spider-man_ps4s_trailer_was_gameplay%2fattachment%2f0%2foriginal.jpg&ehk=cBKPLZ5pqyY7x7XPIJ%2fkSHVBzjyPOoOHj9OG9nYN8Dw%3d&risl=&pid=ImgRaw&r=0"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">Spiderman </div>
+                    <div class="price"><a href="https://oceanofgames.com/take-off-the-flight-simulator-free-download/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://images.purexbox.com/19ec1e0d879bb/is-microsoft-flight-simulator-available-on-xbox-one.original.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">Flight Stimulator</div>
+                    <div class="price"><a href="https://oceanofgames.com/take-off-the-flight-simulator-free-download/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://th.bing.com/th/id/R.b89db97f116ace80503f7e10c20230f8?rik=pgy5j%2bOWHMIwVA&riu=http%3a%2f%2fassets.vg247.com%2fcurrent%2f2013%2f05%2fgrand_theft_auto_5_gta_v_02.jpg&ehk=Hf%2fzZgiAOKmb%2bwn%2bBKX8C3d%2fkWH489%2fzqq3QWpYpbP4%3d&risl=&pid=ImgRaw&r=0"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">GTA V</div>
+                    <div class="price"><a href="https://oceantogames.com/gta-5-download/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player and story mode
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://th.bing.com/th/id/R.ef6e2174fe8a30d7e18b0699f9cdbe88?rik=NUtu6Hyqg91Ssg&riu=http%3a%2f%2ftoucharcade.com%2fwp-content%2fuploads%2f2013%2f12%2fGTA_SA1.jpg&ehk=6ZQnr8qc%2ffnmWzjcl9kVKndJvMScBNT8p3p1DpvxFr4%3d&risl=&pid=ImgRaw&r=0"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">GTA San Adreas</div>
+                    <div class="price"><a href="https://oceantogames.com/gta-san-andreas-download-free/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Single Player and Story mode
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.rofQZlE8fN1t4I1j7uOCKQAAAA?pid=ImgDet&rs=1"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">COD World War 2</div>
+                    <div class="price"><a href="https://oceanofgames.com/call-of-duty-wwii-download-free/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Multiplayer option available
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://img.hype.games/cdn/a276e1f3-6ecb-4589-91cc-6638a486ab33Modelo-cover.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">FREE FIRE</div>
+                    <div class="price"><a href="https://oceantogames.com/free-fire-game-download-for-pc/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Multiplayer option available
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://images.firstpost.com/wp-content/uploads/2019/01/PUBG-Lite-copy.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">PUBG (PC)</div>
+                    <div class="price"><a href="https://oceanofgames.com/pubg-mobile-free-download/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Multiplayer option available
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img img1">
+                        <img
+                            src="https://th.bing.com/th/id/R.8f71e73d41b9c2abba034da5adbd5c83?rik=XqeYqBv6Y9J50Q&riu=http%3a%2f%2fwww.geeksays.com%2fwp-content%2fuploads%2f2016%2f04%2fhow-to-play-clash-of-clans-on-pc.jpg&ehk=%2bgk67HFH%2bFVDavZ1s5IcgOKvEe3JS%2f9RtLE8HjIGnic%3d&risl=&pid=ImgRaw&r=0"
+                            alt=""
+                        />
+                    </div>
+                    <div class="name">CLASH OF CLANS</div>
+                    <div class="price"><a href="https://oceanofgames.com/clash-of-clans-free-download/">DOWNLOAD</a></div>
+                    <div class="info">
+                        Multiplayer option available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer0"><h1>GAMERZONE</h1></div>
+        <div class="footer1">
+            Connect with us at
+            <div class="social-media">
+                <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+                <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+                <a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="product">
+                <div class="heading">Websites</div>
+                <div class="div">Ocean of Games</div>
+                <div class="div">FitGirl Repack</div>
+                <div class="div">Media Fire</div>
+                <div class="div">Steam</div>
+                <div class="div">Epic Games Store</div>
+            </div>
+            <div class="services">
+                <div class="heading">Services</div>
+                <div class="div">Return</div>
+                <div class="div">Cash Back</div>
+                <div class="div">Affiliate Marketing</div>
+                <div class="div">Others</div>
+            </div>
+            <div class="Company">
+                <div class="heading">Company</div>
+                <div class="div">Complaint</div>
+                <div class="div">Careers</div>
+                <div class="div">Affiliate Marketing</div>
+                <div class="div">Support</div>
+            </div>
+            <div class="Get Help">
+                <div class="heading">Get Help</div>
+                <div class="div">Help Center</div>
+                <div class="div">Privacy Policy</div>
+                <div class="div">Terms</div>
+            </div>
+        </div>
+        <div class="footer3">
+            Copyright ©
+            <h4>GAMERZONE</h4>
+            2004-2023
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="practice_web_1.js"></script>
+    </div>
+</body>
+</html>
